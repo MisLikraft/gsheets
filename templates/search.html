@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}{{search}}{% endblock title %}
+
+{% block body %}
+
+<style>
+  h1 {
+    text-align: center;
+  }
+
+  .form-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50vh;
+  }
+  .container {
+    padding-top: 3rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .details {
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 2.5rem 1rem;
+    margin: 2rem;
+  }
+</style>
+<!-- <div class="container">
+  <h1>Likraft</h1> -->
+  
+  <div class="details">
+    {{col_0}}&nbsp;:&nbsp;{{row_0}}
+    <br>
+    {{col_1}}&nbsp;:&nbsp;{{row_1}}
+    <br>
+    {{col_2}}&nbsp;:&nbsp;{{row_2}}
+    <br>
+    {{col_10}}&nbsp;:&nbsp;{{row_10}}
+    <br>
+    {{col_11}}&nbsp;:&nbsp;{{row_11}}
+    <br>
+    {{col_12}}&nbsp;:&nbsp;{{row_12}}
+    <br>
+    {{col_13}}&nbsp;:&nbsp;{{row_13}}
+  </div>
+<!-- </div> -->
+</div>
+
+{% endblock body %}
